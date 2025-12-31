@@ -27,4 +27,17 @@ Summary of Logic:
 1. If lengths differ → immediately false.
 2. Count frequency of letters in s.
 3. Iterate t → decrement counts, if mismatch → false.
+
 4. If everything matched → true.
+
+
+////////////////////////////////////////////////
+Time Complexity: O(n)
+- Counting characters in s → O(n)
+- Iterating over t → O(n)
+- Total = O(n) where n = length of string
+
+Space Complexity: O(1) in theory
+-The object charCount will at most store 26 letters (if lowercase English letters)
+-So space is constant relative to input alphabet, O(1)
+-If we consider all Unicode characters, space = O(n)
